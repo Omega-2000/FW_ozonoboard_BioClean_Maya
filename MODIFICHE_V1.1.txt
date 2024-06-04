@@ -1,0 +1,7 @@
+
+
+	-	rimuovere C4 su "BOOT"		--->		problemi sul boot (gpio9) - boot mode sbagliata
+
+	-	espefuse.py --port COMx burn_efuse DIS_PAD_JTAG 1	--->		led rosso all'avvio	(disabilita jtag)   
+
+	-	( ozono_board_FW con 100ms invece che 2000ms allo spegnimento )
