@@ -1,0 +1,21 @@
+[ozonizzatore piccolo]
+28/11 ---> 318 + 820
+29/11 ---> + 807
+30/11 ---> + 831
+01/12 ---> + 802 = 3578
+02/12 ---> 8 cicli da 1h
+05/12 ---> 10
+06/12 ---> 10 = 28 cicli da 1h
+
+____________________________________________
+
+[ozonizzatore grande]
+28/11 ---> 820
+29/11 ---> + 806
+30/11 ---> + 831
+01/12 ---> + 802 = 3259
+02/12 ---> 8 cicli da 1h
+05/12 ---> 10
+06/12 ---> 10 = 28 cicli da 1h
+
+3500 cicli -> /10 per ogni lavaggio -> /2 lavaggi al giorno -> 730 giorni del mese -> 5,8 mesi _____ 1 anno se fa 1 lavaggio al giorno

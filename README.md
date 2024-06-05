@@ -42,3 +42,21 @@ ISTRUZIONI PRESENTI ALL'INTERNO DEL FILE "MODIFICHE_V1.1.txt":
 
 - PER RISOLVERE IL PROBLEMA DEL LED ROSSO ALL'AVVIO -> DISABILITARE IL JTAG
     - Inviare da linea di comando di ESP-IDF : espefuse.py --port COMx burn_efuse DIS_PAD_JTAG 1
+
+**TEST**
+- **"Test_BioClean_DeviceTest"**
+  - Test preparato per essere utilizzato dal DeviceTest. (i json dei risultati dovranno essere cambiati per essere interpretati correttamente dal DeviceTest)
+  - Test per piattaforma di test BioClean/Maya e progettato per testare una scheda alla volta.
+  - Collegare Arduino Mega al DeviceTest (o al computer) per caricare il FW di test necessario e soprattutto per leggere i risultati del test in seriale.
+  - Successivamente collegare alla scheda da testare: i cavetti/il connettore di alimentazione, i cavetti/il connettore del relè che simulerà l'uscita dell'ozonizzatore, i cavetti arancione/nero sul connettore "jst" in cui dovrebbe essere collegato il flussometro (cavetto arancione dovrà essere al centro tra i 3 pin all'interno del connettore, mentre il nero dovrà essere posizionato sul pin verso il connettore del led) e infine collegare i led rgb nell'apposito connettore "MODU II".
+  - Alimentare la piattaforma di test che accenderà anche la scheda, cliccare il bottone collegato alla scheda Arduino Mega per far iniziare il test e leggere la seriale finchè non verrà stampato un risultato e il test sarà concluso.
+
+- **"test_triac"**
+  - Questo test è stato usato nelle prime produzioni e nei test delle schede BioClean e Maya fino all'inzio del 2024.
+  - Test preparato per testare 8 schede contemporaneamente e per collegare la scheda Arduino Mega al computer e leggere la seriale (con i risultati) da esso.
+  - La preparazione e i collegamenti saranno gli stessi elencati nel test "Test_BioClean_DeviceTest". I collegamenti cambiano solo a seconda della scheda che si andrà a testare, perchè la scheda BioClean ha un tipo di connettori per l'alimentazione e per i collegamenti dell'uscita dell'ozonizzatore, mentre la scheda Maya ha un altro tipo di connettori.
+
+- **"test triac on off loop"**
+  - Test utilizzato per testare la durabilità e la funzionalità del FW della scheda BioClean e Maya.
+  - Test che simula il passaggio dell'acqua attraverso il flussometro per dei certi periodi, ovvero contemporaneamente cambia colore del led rgb e accende/spegne l'uscita dell'ozonizzatore per dei intervalli. Inoltre salverà all'interno dello spiff i risultati di questo test.
+  - Per eseguire questo test si dovrà alimentare la scheda, collegare il led e un'ozonizzatore.
