@@ -5,6 +5,6 @@
 
 extern ledc_visual_configuration green;
 extern ledc_visual_configuration blue;
-extern ledc_visual_configuration white;
+//extern ledc_visual_configuration white;
 
 #endif

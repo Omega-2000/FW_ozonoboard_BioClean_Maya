@@ -14,9 +14,9 @@ ledc_visual_configuration blue = {
   .repeat = 1
 };
 
-ledc_visual_configuration white = {
+/*ledc_visual_configuration white = {
   .duty = {MAX_DUTY, MAX_DUTY, MAX_DUTY},
   .fade_millis = 1000,
   .blink_millis = 0,
   .repeat = 1
-};
+};*/
