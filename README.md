@@ -30,9 +30,11 @@
 - loop() : a seconda del valore assunto dalla variabile "last_ok", e dai millisecondi passati dall'ultima attivazione dell'interrupt, il programma cambierà il colore del led e cambierà lo stato dell'uscita dell'ozonizzatore
 
 **VERSIONI E DIFFERENZE**
+
 La prima versione del FW di entrambe le schede aveva un'unica differenza: il tempo di spegnimento era di 2000ms e non di 100ms (era di 5000ms nei primi test)
 
 **PROGRAMMAZIONE E PREPARAZIONE SCHEDE**
+
 ISTRUZIONI PRESENTI ALL'INTERNO DEL FILE "MODIFICHE_V1.1.txt":
 
 - PER RISOLVERE I PROBLEMI DI AVVIO IN UNA BOOT MODE SBAGLIATA
